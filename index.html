@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Email form</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <style>
+        .block {
+            display: inline-block;
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        Sylvano Umbac
+        <a href="#">Home</a>
+        <a href="jobs.html">Jobs</a>
+        <a href="about.html">About Me</a>
+    </header>
+
+    <div class="sidebar">
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="jobs.html">Jobs</a></li>
+            <li><a href="about.html">About Me</a></li>
+        </ul>
+    </div>  
+    
+    <div class="main">
+        <form action="http://fvi-grad.com:4004/email" method="POST">
+            <!--<h2>Fill out the form below</h2>-->
+            <br>
+            <input type="text" name="demail" placeholder="Destination Email">    
+            <br>
+            <input type="text" name="full_name" placeholder="Full Name">    
+            <br>
+            <input type="text" name="phone_num" placeholder="Phone">    
+            <br>
+            <input type="text" name="date" placeholder="Date">    
+            <br>
+            <input type="text" name="time" placeholder="Time">    
+            <br>
+            <input type="text" name="semail" placeholder="Sender Email">    
+            <br>
+            <input type="text" name="subject" placeholder="Subject">    
+            <br>
+            <textarea name="message" cols="30" rows="10" placeholder="Enter email message here..."></textarea>
+            <br>
+            <input type="submit" name="submit" value="Finish Email">
+        </form>
+    </div>
+    
+    <footer>
+        Sylvano Umbac email: sumbac@techlaunch.io
+    </footer>
+    
+</body>
+</html>
