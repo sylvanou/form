@@ -13,6 +13,7 @@
     </style>
 </head>
 <body>
+
     <header class="header">
         Sylvano Umbac
         <a href="#">Home</a>
@@ -29,27 +30,17 @@
     </div>  
     
     <div class="main">
-        <form action="http://fvi-grad.com:4004/email" method="POST">
-            <!--<h2>Fill out the form below</h2>-->
-            <br>
-            <input type="text" name="demail" placeholder="Destination Email">    
-            <br>
-            <input type="text" name="full_name" placeholder="Full Name">    
-            <br>
-            <input type="text" name="phone_num" placeholder="Phone">    
-            <br>
-            <input type="text" name="date" placeholder="Date">    
-            <br>
-            <input type="text" name="time" placeholder="Time">    
-            <br>
-            <input type="text" name="semail" placeholder="Sender Email">    
-            <br>
-            <input type="text" name="subject" placeholder="Subject">    
-            <br>
-            <textarea name="message" cols="30" rows="10" placeholder="Enter email message here..."></textarea>
-            <br>
-            <input type="submit" name="submit" value="Finish Email">
-        </form>
+            <form class="email-form" action="http://fvi-grad.com:4004/email" method="post">
+                <input type="text" name="dest_email" value="sumbac@techlaunch.io" style="display: none;">
+                <input type="text" name="full_name" value="" placeholder="Full Name">
+                <input type="text" name="phone" value="" placeholder="Phone Number">
+                <input type="text" name="ddate" value="" placeholder="Date">
+                <input type="text" name="hora" value="" placeholder="Time">
+                <input type="text" name="email" value="" placeholder="Your Email Address">
+                <input type="text" name="subject" value="" placeholder="Subject">
+                <textarea name="message" rows="10" cols="30" placeholder="Enter email message here..."></textarea>
+                <input type="submit" name="submit" value="Send">
+            </form>
     </div>
     
     <footer>
